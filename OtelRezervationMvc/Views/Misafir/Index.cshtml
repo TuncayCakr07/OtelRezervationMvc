@@ -1,0 +1,23 @@
+﻿@using OtelRezervationMvc.Models
+@model List<TblYeniKayit>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MisafirLayout.cshtml";
+}
+
+<h2>Profil Sayfası</h2>
+<div class="form-group">
+    @Html.Label("Ad Soyad")
+    <input type="text" name="Ad Soyad" class="form-control" />
+    <br />
+    @Html.Label("Telefon")
+    <input type="text" name="Telefon" class="form-control" />
+    <br />
+    @Html.Label("Şifre")
+    <input type="text" name="Sifre" class="form-control" />
+    <br />
+    <button class="btn btn-danger">Bilgileri Güncelle</button>
+</div>
+    
+

@@ -1,0 +1,19 @@
+﻿@model OtelRezervationMvc.Models.TblMesaj
+
+<div class="map-content-9 mt-lg-0 mt-4">
+    <form action="/Iletisim/Index/" method="post">
+        <div class="twice-two">
+            <input type="text" class="form-control" name="Gonderen" placeholder="Adınız Soyadınız"
+                   required="">
+            <input type="email" class="form-control" name="Mail" placeholder="Email Adresiniz"
+                   required="">
+        </div>
+        <div class="twice">
+            <input type="text" class="form-control" name="Konu"
+                   placeholder="Konu" required="">
+        </div>
+        <textarea name="Mesaj" class="form-control"placeholder="Mesajınız"
+                  required=""></textarea>
+        <button type="submit" class="btn btn-contact">Gönder!</button>
+    </form>
+</div>

@@ -1,0 +1,301 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+/*--- reset code ---*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol,ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+blockquote,q {
+	quotes:none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+	content:'';
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+/* start editing from here */
+a {
+	text-decoration:none;
+}
+.txt-rt {
+	text-align:right;
+}/* text align right */
+.txt-lt {
+	text-align:left;
+}/* text align left */
+.txt-center {
+	text-align:center;
+}/* text align center */
+.float-rt {
+	float:right;
+}/* float right */
+.float-lt {
+	float:left;
+}/* float left */
+.clear {
+	clear:both;
+}/* clear float */
+.pos-relative {
+	position:relative;
+}/* Position Relative */
+.pos-absolute {
+	position:absolute;
+}/* Position Absolute */
+.vertical-base {	
+	vertical-align:baseline;
+}/* vertical align baseline */
+.vertical-top {	
+	vertical-align:top;
+}/* vertical align top */
+nav.vertical ul li {	
+	display:block;
+}/* vertical menu */
+nav.horizontal ul li {	
+	display: inline-block;
+}/* horizontal menu */
+img {
+	max-width:100%;
+}
+
+/*--- end reset code ---*/
+
+body {
+	margin:0;
+	padding:0;
+	background:url(../images/terrace.jpg) no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+    background-position: center;
+}
+.header {
+	text-align:center;
+	margin-top:1%;
+}
+.header h1 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color:#9C8A6E;
+	font-size:45px;
+	text-transform:uppercase;
+	font-weight: 700;
+}
+/* start booking_room */
+
+.banner-top {
+    margin: 3% auto;
+    width: 35%;
+    padding: 2em 30px;
+    background: rgba(221, 221, 221, 0.32);
+    font-family: 'Montserrat', sans-serif;
+    border: 11px solid rgba(186, 165, 146, 0.18);
+}
+.banner-top h2 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: 600;
+	margin: 0 0 6% 0;
+	color:#73B359;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.banner-bottom{
+	margin-top:3%;
+}
+.bnr-left {
+	width:22%;
+	float:left;
+}
+.bnr-right {
+	width:78%;
+	float:right;
+}
+.bnr-left p {
+	color: #000;
+	font-size: 14px;
+	font-weight: 700;
+	margin-top: 10%;
+}
+select {
+	padding: 9px 0px 9px 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	color: #9E9E9E;
+	background: url(../images/arrow.png) no-repeat 95.5% 58% #fff;
+	outline: none;
+	border: none;
+	width: 95%;
+	font-size: 14px;
+	font-weight: 400;
+	cursor: pointer;
+}
+.bnr-one{
+	margin-top:3.3%;
+}
+.bnr-one:nth-child(1){
+	margin-top:0;
+}
+.bnr-right input[type="text"] {
+	width: 95%;
+	color: #9E9E9E;
+	outline: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	padding: 10px 10px;
+	border: none;
+	-webkit-appearance: none;
+}
+.date {
+	background: url(../images/date-icon.png) no-repeat 95.5% 45% #fff;
+	cursor: pointer;
+}
+.bnr-btn {
+	margin: 5% 0 0 22.2%;
+}
+.bnr-btn input[type=submit]{
+	color: #403F45;
+	padding: 7px 25px;
+	font-size: 20px;
+	cursor: pointer;
+	font-weight: 600;
+	border: none;
+	background: #ffeb00;
+	outline: none;
+}
+.bnr-btn input[type=submit]:hover{
+	background:#403F45;
+	color:#fff;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+
+.footer {
+	margin-top:5%;
+	text-align:center;
+	font-family: 'Montserrat', sans-serif;
+}
+.footer p {
+	color:#2F1E12;
+	font-size:16px;
+	line-height:25px;
+}
+.footer a, a:active {
+	color:#2F1E12;
+	text-decoration:none;
+}
+.footer a:hover {
+	color:#00c4ff;
+	text-decoration:none;
+	transition:all 0.5s ease-in-out;
+}
+
+/*--responsive-starts-here--*/
+@media (max-width:1080px){
+	.banner-top {
+    width: 40%;
+}	
+}
+
+@media (max-width:1024px){
+	.banner-top {
+    width: 45%;
+}
+}
+
+@media (max-width: 900px){
+.banner-top {
+    width: 50%;
+}
+}
+
+@media (max-width: 800px){
+.banner-top {
+    width: 55%;
+}
+}
+
+@media (max-width: 768px){
+.banner-top {
+    width: 60%;
+}
+}
+
+@media (max-width: 667px){
+.banner-top {
+    width: 65%;
+}
+}
+
+@media (max-width: 568px){
+.banner-top {
+    width: 75%;
+}	
+.footer p {
+	font-size:15px;
+}
+}
+
+@media (max-width: 480px){
+.banner-top {
+    width: 85%;
+}
+}
+
+@media (max-width: 414px){
+	.header {
+    margin-top: 7%;
+}
+	.banner-top {
+	margin: 10% auto;
+}
+.bnr-right input[type="text"] {
+	margin-left: 10%;
+	width: 85%;
+}
+select {
+	margin-left: 10%;
+	width:85%;
+}
+.bnr-left p {
+    width: 130%;
+}
+.footer {
+	margin-top: 15%;
+}
+.footer p {
+    font-size: 14px;
+}
+}
+
+@media (max-width: 384px){
+	.bnr-right input[type="text"] {
+    margin-left: 20%;
+	}
+	.bnr-left p {
+    width: 160%;
+    margin-left: -35%;
+}
+}
