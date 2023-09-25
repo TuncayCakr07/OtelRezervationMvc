@@ -26,5 +26,6 @@ namespace OtelRezervationMvc.Models
         public Nullable<int> Durum { get; set; }
     
         public virtual TblMisafir TblMisafir { get; set; }
+        public virtual TblOda TblOda { get; set; }
     }
 }

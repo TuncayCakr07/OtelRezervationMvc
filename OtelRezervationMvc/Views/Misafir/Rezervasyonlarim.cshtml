@@ -14,17 +14,19 @@
         <th>Giriş Tarihi</th>
         <th>Çıkış Tarihi</th>
         <th>Kişi Sayısı</th>
+        <th>Detay</th>
     </tr>
     <tr>
         @foreach (var x in Model)
         {
-            <th>@x.TblMisafir.AdSoyad</th>
-            <th>@x.GirisTarih</th>
-            <th>@x.CikisTarih</th>
-            <th>@x.Kisi</th>
+            <td>@x.TblMisafir.AdSoyad</td>
+            <td>@(((DateTime)x.GirisTarih).ToString("dd-MMM-yyyy"))</td>
+            <td>@(((DateTime)x.CikisTarih).ToString("dd-MMM-yyyy"))</td>
+            <td>@x.Kisi</td>
+            <td> <a href="#" class="btn btn-primary">Detaylar</a></td>
+            
         }
     </tr>
 
 </table>
-@ViewBag.loginmail
 

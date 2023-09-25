@@ -1,23 +1,27 @@
-﻿@using OtelRezervationMvc.Models
-@model List<TblYeniKayit>
+﻿@model OtelRezervationMvc.Models.TblYeniKayit
 
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_MisafirLayout.cshtml";
 }
-
+<br />
 <h2>Profil Sayfası</h2>
+<br />
+@using (Html.BeginForm("MisafirBilgileriGuncelle", "Misafir", FormMethod.Post))
+{
 <div class="form-group">
+    @Html.HiddenFor(x => x.ID, new { @class = "form-control" })
+    <br />
     @Html.Label("Ad Soyad")
-    <input type="text" name="Ad Soyad" class="form-control" />
+    @Html.TextBoxFor(x => x.AdSoyad, new { @class = "form-control" })
     <br />
     @Html.Label("Telefon")
-    <input type="text" name="Telefon" class="form-control" />
+    @Html.TextBoxFor(x => x.Telefon, new { @class = "form-control" })
     <br />
     @Html.Label("Şifre")
-    <input type="text" name="Sifre" class="form-control" />
+    @Html.TextBoxFor(x => x.Sifre, new { @class = "form-control" })
     <br />
     <button class="btn btn-danger">Bilgileri Güncelle</button>
 </div>
-    
+}
 

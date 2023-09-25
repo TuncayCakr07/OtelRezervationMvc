@@ -1,0 +1,28 @@
+﻿@model OtelRezervationMvc.Models.TblMesajGuest
+
+@{
+    ViewBag.Title = "MesajDetay";
+    Layout = "~/Views/Shared/_MisafirLayout.cshtml";
+}
+<br />
+<h2>Mesaj Detayı</h2>
+<br />
+@Html.Label("Gönderen")
+@Html.TextBoxFor(x => x.Gonderen, new { @class = "form-control" })
+<br />
+<br />
+@Html.Label("Alıcı")
+@Html.TextBoxFor(x => x.Alici, new { @class = "form-control" })
+<br />
+<br />
+@Html.Label("Konu")
+@Html.TextBoxFor(x => x.Konu, new { @class = "form-control" })
+<br />
+<br />
+@Html.Label("Tarih")
+@Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+<br />
+<br />
+@Html.Label("Mesaj")
+@Html.TextAreaFor(x => x.Mesaj, 10, 4, new { @class = "form-control" })
+<br />

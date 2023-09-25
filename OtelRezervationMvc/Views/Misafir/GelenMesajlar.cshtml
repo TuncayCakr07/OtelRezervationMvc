@@ -1,0 +1,29 @@
+﻿@using OtelRezervationMvc.Models
+@model List<TblMesajGuest>
+
+@{
+    ViewBag.Title = "GelenMesajlar";
+    Layout = "~/Views/Shared/_MisafirLayout.cshtml";
+}
+<br />
+<h2>GelenMesajlar</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Gönderen</th>
+        <th>Konu</th>
+        <th>Tarih</th>
+        <th>Mesajı Aç</th>
+
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.Gonderen</td>
+            <td>@x.Konu</td>
+            <td>@(((DateTime)x.Tarih).ToString("dd-MMM-yyyy"))</td>
+            <td><a href="/Misafir/MesajDetay/@x.MesajID" class="btn btn-danger" >Mesajı Aç</a></td>
+        </tr>
+     }
+    </table>
+<a href="/Misafir/YeniMesaj/" class="btn btn-success">Yeni Mesaj</a>
